@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Lipz Me</string>
+    <string name="TxtSeekValue">1</string>
+    <string name="BtnAHP">AHP</string>
+    <string name="TxtKualitas">Kualitas</string>
+    <string name="TxtWarna">Warna</string>
+    <string name="TxtTekstur">Tekstur</string>
+    <string name="BtnBandingkan">Bandingkan</string>
+    <string name="TxtPilih">Pilih Lipstik</string>
+    <string name="TxtBandingKW">Berdasarkan prioritas manakah yang lebih penting antara Kualitas dan Warna</string>
+    <string name="TxtBandingKT">Berdasarkan prioritas manakah yang lebih penting antara Kualitas dan Tekstur</string>
+    <string name="TxtBandingWT">Berdasarkan prioritas manakah yang lebih penting antara Warna dan Tekstur</string>
+    <string name="HasilBanding">Dari hasil banding, 00.0% merupakan hasil perbandingan dari [merklipstik].</string>
+
+    <string name="MULAI">MULAI</string>
+    <string name="title_slide1">Bandingkan Lipstik</string>
+    <string name="desc_slide1">Pilih 3 lipstik yang berbeda dan bandingkan</string>
+    <string name="title_slide2">Tentukan Bobot</string>
+    <string name="desc_slide2">Beri bobot untuk setiap kriteria dan alternatif</string>
+    <string name="title_slide3">Tentukan Pilihan</string>
+    <string name="desc_slide3">Tentukan pilihan lipstik terbaik menurutmu</string>
+    <string name="lipstik_1">Lipstik 1</string>
+    <string name="lipstik_2">Lipstik 2</string>
+    <string name="lipstik_3">Lipstik 3</string>
+    <string name="alertTitle">Perhatian !</string>
+    <string name="alertMsg">Untuk melakukan perbandingan Lipstik maka anda Harus memilih 3 Lipstik</string>
+
+</resources>

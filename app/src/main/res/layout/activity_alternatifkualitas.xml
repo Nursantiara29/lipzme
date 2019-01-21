@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".AlternatifKualitas">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:text=" Bandingkan Berdasarkan"
+                android:textAlignment="center"
+                android:textColor="@color/text_pink"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/SubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Kualitas"
+                android:textColor="@color/text_pink"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintLeft_toLeftOf="@+id/Title"
+                app:layout_constraintRight_toRightOf="@+id/Title"
+                app:layout_constraintTop_toBottomOf="@+id/Title"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/TxtValKualitas1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/TxtSeekValue"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:visibility="visible"
+                app:layout_constraintLeft_toLeftOf="@+id/SBKualitas1Alt1"
+                app:layout_constraintRight_toRightOf="@+id/SBKualitas1Alt1"
+                app:layout_constraintTop_toBottomOf="@+id/SBKualitas1Alt1"
+                tools:ignore="MissingConstraints"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <TextView
+                android:id="@+id/TxtValKualitas3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/TxtSeekValue"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:visibility="visible"
+                app:layout_constraintLeft_toLeftOf="@+id/SBKualitas3Alt1"
+                app:layout_constraintRight_toRightOf="@+id/SBKualitas3Alt1"
+                app:layout_constraintTop_toBottomOf="@+id/SBKualitas3Alt1"
+                tools:ignore="MissingConstraints"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <TextView
+                android:id="@+id/TxtValKualitas2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/TxtSeekValue"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:visibility="visible"
+                app:layout_constraintLeft_toLeftOf="@+id/SBKualitas2Alt1"
+                app:layout_constraintRight_toRightOf="@+id/SBKualitas2Alt1"
+                app:layout_constraintTop_toBottomOf="@+id/SBKualitas2Alt1"
+                tools:ignore="MissingConstraints"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <com.spk.santi.lipzme.TwoValueSeekBar
+                android:id="@+id/SBKualitas1Alt1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="70dp"
+                android:max="16"
+                android:progress="8"
+                android:progressDrawable="@android:color/transparent"
+                style="@android:style/Widget.Holo.Light.SeekBar"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SubTitle"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <com.spk.santi.lipzme.TwoValueSeekBar
+                android:id="@+id/SBKualitas2Alt1"
+                style="@android:style/Widget.Holo.Light.SeekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="65dp"
+                android:max="16"
+                android:progress="8"
+                android:progressDrawable="@android:color/transparent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintVertical_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TxtValKualitas1" />
+
+            <com.spk.santi.lipzme.TwoValueSeekBar
+                android:id="@+id/SBKualitas3Alt1"
+                style="@android:style/Widget.Holo.Light.SeekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="65dp"
+                android:max="16"
+                android:progress="8"
+                android:progressDrawable="@android:color/transparent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintVertical_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TxtValKualitas2" />
+
+            <Button
+                android:id="@+id/BtnBandingkanK"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:text="Bandingkan"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TxtValKualitas3"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="HardcodedText,RtlHardcoded"
+                tools:layout_editor_absoluteX="128dp" />
+
+            <TextView
+                android:id="@+id/Lips1Kualitas1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/lipstik_1"
+                android:textColor="@color/text_pink"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/SBKualitas1Alt1"
+                app:layout_constraintLeft_toLeftOf="@+id/SBKualitas1Alt1"
+                tools:ignore="MissingConstraints,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/Lips2Kualitas1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/lipstik_2"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/text_pink"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/SBKualitas1Alt1"
+                app:layout_constraintRight_toRightOf="@+id/SBKualitas1Alt1"
+                tools:ignore="MissingConstraints,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/Lips1Kualitas2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/lipstik_1"
+                android:textColor="@color/text_pink"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/SBKualitas2Alt1"
+                app:layout_constraintLeft_toLeftOf="@+id/SBKualitas2Alt1"
+                tools:ignore="MissingConstraints,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/Lips3Kualitas1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/lipstik_3"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/text_pink"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/SBKualitas2Alt1"
+                app:layout_constraintRight_toRightOf="@+id/SBKualitas2Alt1"
+                tools:ignore="MissingConstraints,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/Lips2Kualitas2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/lipstik_2"
+                android:textColor="@color/text_pink"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/SBKualitas3Alt1"
+                app:layout_constraintLeft_toLeftOf="@+id/SBKualitas3Alt1"
+                tools:ignore="MissingConstraints,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/Lips3Kualitas2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/lipstik_3"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/text_pink"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/SBKualitas3Alt1"
+                app:layout_constraintRight_toRightOf="@+id/SBKualitas3Alt1"
+                tools:ignore="MissingConstraints,RtlHardcoded" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>

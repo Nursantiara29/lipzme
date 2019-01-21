@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".AHPActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/TitlePilihLipstik"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="31dp"
+                android:ems="10"
+                android:inputType="none"
+                android:labelFor="@+id/TitlePilihLipstik"
+                android:text="@string/TxtPilih"
+                android:textAlignment="center"
+                android:textColor="@color/text_pink"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/SpinnerLipstik1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:textAlignment="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TitlePilihLipstik" />
+
+            <Spinner
+                android:id="@+id/SpinnerLipstik2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:textAlignment="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SpinnerLipstik1" />
+
+            <Spinner
+                android:id="@+id/SpinnerLipstik3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:textAlignment="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SpinnerLipstik2" />
+
+            <EditText
+                android:id="@+id/TxtBandingkan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="31dp"
+                android:ems="10"
+                android:inputType="none"
+                android:labelFor="@+id/TitlePilihLipstik"
+                android:text="@string/BtnBandingkan"
+                android:textAlignment="center"
+                android:textColor="@color/text_pink"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/SpinnerLipstik3" />
+
+            <TextView
+                android:id="@+id/TxtPenting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/TxtBandingKW"
+                android:textAlignment="center"
+                android:textColor="@color/text_pink"
+                android:textSize="18sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TxtBandingkan" />
+
+            <TextView
+                android:id="@+id/TxtPentingKT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/TxtBandingKT"
+                android:textAlignment="center"
+                android:textColor="@color/text_pink"
+                android:textSize="18sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TxtValKW" />
+
+            <TextView
+                android:id="@+id/TxtPentingWT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/TxtBandingWT"
+                android:textAlignment="center"
+                android:textColor="@color/text_pink"
+                android:textSize="18sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TxtValKT" />
+
+            <TextView
+                android:id="@+id/TxtValKW"
+                android:layout_width="8dp"
+                android:layout_height="17dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/TxtSeekValue"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:layout_constraintLeft_toLeftOf="@+id/seekBarKW"
+                app:layout_constraintRight_toRightOf="@+id/seekBarKW"
+                app:layout_constraintTop_toBottomOf="@+id/seekBarKW" />
+
+            <TextView
+                android:id="@+id/TxtValKT"
+                android:layout_width="8dp"
+                android:layout_height="17dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/TxtSeekValue"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:layout_constraintLeft_toLeftOf="@+id/seekBarKT"
+                app:layout_constraintRight_toRightOf="@+id/seekBarKT"
+                app:layout_constraintTop_toBottomOf="@+id/seekBarKT"
+                tools:layout_constraintTop_creator="1" />
+
+            <TextView
+                android:id="@+id/TxtValWT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/TxtSeekValue"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintLeft_toLeftOf="@+id/seekBarWT"
+                app:layout_constraintRight_toRightOf="@+id/seekBarWT"
+                app:layout_constraintTop_toBottomOf="@+id/seekBarWT" />
+
+            <com.spk.santi.lipzme.TwoValueSeekBar
+                android:id="@+id/seekBarKW"
+                style="@android:style/Widget.Holo.Light.SeekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="50dp"
+                android:max="16"
+                android:progress="8"
+                android:progressDrawable="@android:color/transparent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TxtPenting" />
+
+            <com.spk.santi.lipzme.TwoValueSeekBar
+                android:id="@+id/seekBarKT"
+                style="@android:style/Widget.Holo.Light.SeekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="62dp"
+                android:max="16"
+                android:progress="8"
+                android:progressDrawable="@android:color/transparent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TxtPentingKT" />
+
+            <com.spk.santi.lipzme.TwoValueSeekBar
+                android:id="@+id/seekBarWT"
+                style="@android:style/Widget.Holo.Light.SeekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="60dp"
+                android:max="16"
+                android:progress="8"
+                android:progressDrawable="@android:color/transparent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TxtPentingWT" />
+
+            <Button
+                android:id="@+id/BtnBandingkan"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/BtnBandingkan"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TxtValWT" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:text="@string/TxtKualitas"
+                android:textColor="@color/text_pink"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/seekBarKW"
+                app:layout_constraintLeft_toLeftOf="@+id/seekBarKW" />
+
+            <TextView
+                android:id="@+id/TxtWarnaKW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:text="@string/TxtWarna"
+                android:textColor="@color/text_pink"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/seekBarKW"
+                app:layout_constraintRight_toRightOf="@+id/seekBarKW" />
+
+            <TextView
+                android:id="@+id/TxtKuialitasKT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="0dp"
+                android:text="@string/TxtKualitas"
+                android:textColor="@color/text_pink"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/seekBarKT"
+                app:layout_constraintLeft_toLeftOf="@+id/seekBarKT" />
+
+            <TextView
+                android:id="@+id/TxtTeksturKT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="-3dp"
+                android:text="@string/TxtTekstur"
+                android:textColor="@color/text_pink"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/seekBarKT"
+                app:layout_constraintRight_toRightOf="@+id/seekBarKT" />
+
+            <TextView
+                android:id="@+id/TxtWarnaWT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="0dp"
+                android:text="@string/TxtWarna"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text_pink"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/seekBarWT"
+                app:layout_constraintLeft_toLeftOf="@+id/seekBarWT" />
+
+            <TextView
+                android:id="@+id/TxtTeksturWT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="0dp"
+                android:text="@string/TxtTekstur"
+                android:textColor="@color/text_pink"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/seekBarWT"
+                app:layout_constraintRight_toRightOf="@+id/seekBarWT"
+                tools:layout_constraintBottom_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>

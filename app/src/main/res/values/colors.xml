@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFE91E63</color>
+    <color name="colorPrimaryDark">#FFC2185B</color>
+    <color name="colorAccent">#FFFF4081</color>
+
+    <!-- Screens background -->
+    <color name="bg_color">#FFF8BBD0</color>
+
+    <!-- Text Slider Color -->
+    <color name="text_pink">#FFC2185B</color>
+
+    <!-- dots active colors -->
+    <color name="dot_active">#000000</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_inactive">#cccccc</color>
+    <color name="background_material_dark">#ffffff</color>
+    <color name="primary_text_material_light">#de000000</color>
+    <color name="primary_text_material_dark">#000000</color>
+    <color name="text_color">#727272</color>
+</resources>
