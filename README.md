@@ -1,2 +1,2 @@
 # lipzme
-decision support system for selecting lipstic
+Decision support system for selecting lipstic
